@@ -1,0 +1,255 @@
+/* utilities */
+
+/* .btn:focus {
+    box-shadow: 0;
+}
+
+.btn-danger:focus {
+    box-shadow: 0;
+}
+
+.btn-primary:focus {
+    box-shadow: 0;
+}
+
+.btn-dark:focus {
+    box-shadow: 0;
+}
+
+.btn-check:focus {
+    box-shadow: 0;
+}
+
+.btn-check:focus+.btn-danger, .btn-danger:focus {
+    box-shadow: 0;
+}
+
+.btn-check:focus+.btn-dark, .btn-dark:focus {
+    box-shadow: 0;
+} */
+
+
+.btn {
+    border-radius: 30px;
+    border-width: 2px;
+}
+
+.btn-primary {
+    position: relative;
+    border-width: 1px;
+}
+
+.btn-primary:after {
+    content: "";
+    position: absolute;
+    top: -4px;
+    bottom: -4px;
+    right: -4px;
+    left: -4px;
+    border: 2px solid var(--bs-blue);
+    border-radius: 30px;
+    opacity: 0;
+    transition: opacity .15s ease-in-out;
+}
+
+.btn-primary:hover::after {
+    opacity: 1;
+}
+
+button.navbar-toggler {
+    background-color: transparent;
+}
+
+button.navbar-toggler {
+    filter: invert(1);
+}
+
+.btn-danger {
+    position: relative;
+    border-width: 2px;
+}
+
+.btn-danger:after {
+    content: "";
+    position: absolute;
+    top: -5px;
+    bottom: -5px;
+    right: -5px;
+    left: -5px;
+    border: 2px solid #bb2d3b;
+    border-radius: 30px;
+    opacity: 0;
+    transition: opacity .15s ease-in-out;
+}
+
+.btn-danger:hover::after {
+    opacity: 1;
+}
+
+.btn-dark {
+    position: relative;
+    border-width: 2px;
+}
+
+.btn-dark:after {
+    content: "";
+    position: absolute;
+    top: 2px;
+    bottom: 2px;
+    right: 2px;
+    left: 2px;
+    border: 2px solid white;
+    border-radius: 30px;
+    opacity: 0;
+    transition: opacity .15s ease-in-out;
+}
+
+.btn-dark:hover::after {
+    opacity: 1;
+}
+
+
+.section:not(.no-padd) {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+/* header */
+
+header .logo-nav img {
+    height: 100%;
+    width: 100px;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 2;
+}
+
+/* main */
+
+main {
+    margin-top: 85px;
+}
+
+/* jumbotron */
+
+.bg-image {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+}
+
+.bg-image img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: top;
+}
+
+.my-card {
+    padding-top: 15rem;
+    padding-bottom: 5rem;
+    padding-left: 2rem;
+}
+
+/* Game list */
+
+.card-list-game img {
+    border-radius: 10px;
+    width: 100%;
+}
+
+/* Ecco play5 */
+
+/* list game ps5 */
+
+.card-items-ps5 img {
+    opacity: .8;
+}
+
+.card-items-ps5:hover img {
+    opacity: 1;
+}
+
+.card-items-ps5:hover:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;    
+    border-bottom: 3px solid var(--bs-blue);
+}
+
+/* it takes to */
+
+.my-card-take img {
+    width: 50%;
+}
+
+/* PS NOW & PS PLUS */
+
+.ps-plus-now-banner img {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    height: 100%;
+}
+
+.btn-ps {
+    background-color: #d9dadc;
+    position: relative;
+    border-width: 1px;
+}
+
+.btn-ps:hover {
+    background-color: #f4f4f4;
+}
+
+.btn-ps:after {
+    content: "";
+    position: absolute;
+    top: -4px;
+    bottom: -4px;
+    right: -4px;
+    left: -4px;
+    border: 2px solid #f4f4f4;
+    border-radius: 30px;
+    opacity: 0;
+    transition: opacity .15s ease-in-out;
+}
+
+
+.btn-ps:hover::after {
+    opacity: 1;
+}
+
+/* ps plus banner */
+
+.banner-ps-plus {
+    background-color: #bebcbb;
+}
+
+/* ps now banner */
+
+.banner-ps-now {
+    background-color: #161c3b;
+}
+
+/* footer */
+
+footer {
+    background-color: #00439c;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+.logo-leanguage img {
+    width: 20px;
+}
